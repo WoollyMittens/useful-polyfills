@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>useful.polyfills.js: A library of useful polyfills to ease working with HTML5 in legacy environments.</title>
+		<style>
+			html { font-family:Sans-Serif; font-size:75%; height:100%; }
+			body { _height:100%; line-height:180%; margin:0; min-height:100%; padding:1%; }
+			.example { max-width:960px; margin:0 auto; padding:0; clear:both; }
+			.example > article, .example > aside { width:98%; padding:2%; }
+			.example-left > article, .example-left > aside { width:48%; padding:1%; float:left; }
+			.example-right > article, .example-right > aside { width:48%; padding:1%; float:right; }
+		</style>
+		<!--[if lte IE 9]>
+			<meta http-equiv="imagetoolbar" content="no"/>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+			<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<section class="example example-right">
+			<article>
+				<h2>Polyfills Library</h2>
+				<p>A library of useful polyfills to ease working with HTML5 in legacy environments.</p>
+				<p><a class="button downloadButton" href="http://www.woollymittens.nl/downloads/_useful.zip" target="_blank">Download</a></p>
+			</article>
+			<aside>
+
+				<!-- Cut below this -->
+				<style>@import url("./css/useful.polyfills.css")</style>
+				<script src="./js/useful.polyfills.js"></script>
+				<div class="useful-tests">
+					<p>
+						The output of these tests is reported using <strong>console.log();</strong>.<br/>
+						Be sure to open the developer console first.
+					</p>
+					<dl>
+						<dt>useful.polyfills</dt>
+						<dd><button onclick="console.log(['a','b','c'].indexOf('b'))">The index of B in A,B,C</button></dd>
+						<dd><button onclick="console.log(document.querySelectorAll('dd'));">All DD elements</button></dd>
+						<dd>
+							<button id="polyfill-test-a">Report a click</button>
+							<script>
+								document.getElementById('polyfill-test-a').addEventListener('click', function () { window.event; console.log('clicked:', this.id); });
+							</script>
+						</dd>
+						<dd>
+							<script>
+								originalTestObject = {'lorem':'ipsum','dolor':'sit'};
+								clonedTestObject = Object.create(originalTestObject);
+								clonedTestObject.dolor = 'sit amet';
+							</script>
+							<button onclick="console.log('originalTestObject.dolor', originalTestObject.dolor); console.log('clonedTestObject.dolor', clonedTestObject.dolor);">Cloned and modified</button>
+						</dd>
+						<dd><button onclick="console.log(' Hello world '.trim());">Trim " Hello world "</button></dd>
+					</dl>
+				</div>
+				<!-- Cut above this -->
+
+			</aside>
+		</section>
+	</body>
+</html>

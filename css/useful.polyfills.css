@@ -1,0 +1,16 @@
+/*
+	Example Styling for Useful Functions
+*/
+@media all {
+  .useful-tests dt {
+    font-weight: bold;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .useful-tests dd {
+    display: block;
+    margin: 0 0 1.3em 0;
+    padding: 0;
+  }
+}

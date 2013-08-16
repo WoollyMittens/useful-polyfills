@@ -1,0 +1,26 @@
+/*
+	Example Styling for Useful Functions
+*/
+@media all {
+	@import "compass/css3";
+	@import "compass/utilities";
+	.useful-tests {
+		dt {
+			font-weight : bold;
+			display : block;
+			margin : 0;
+			padding : 0;
+		}
+		dd {
+			display : block;
+			margin : 0 0 1.3em 0;
+			padding : 0;
+		}
+	}
+}
+@media (min-width: 1200px) {}
+@media (min-width: 980px) and (max-width: 1199px) {}
+@media (min-width: 768px) and (max-width: 979px) {}
+@media (max-width: 767px) {}
+@media (max-width: 480px) {}
+@media print {}

@@ -14,7 +14,9 @@ This include can be added to the header or placed inline before the script is in
 
 The following private functions are run.
 
-### Functions
+## Functions
+
+### html5
 
 ```javascript
 	polyfills.html5();
@@ -22,11 +24,15 @@ The following private functions are run.
 
 Add support for HTML5 elements in Internet Explorer 8 and lower.
 
+### arrayIndexOf
+
 ```javascript
 	polyfills.arrayIndexOf();
 ```
 
 Adds support for array.indexOf.
+
+### querySelectorAll
 
 ```javascript
 	polyfills.querySelectorAll();
@@ -34,11 +40,15 @@ Adds support for array.indexOf.
 
 Adds support for document.querySelectorAll (1).
 
+### addEventListener
+
 ```javascript
 	polyfills.addEventListener();
 ```
 
 Adds support for element.addEventListener, element.removeEventListener and element.dispatchEvent (2).
+
+### consoleLog
 
 ```javascript
 	polyfills.consoleLog();
@@ -46,11 +56,15 @@ Adds support for element.addEventListener, element.removeEventListener and eleme
 
 Adds support for console.log.
 
+### objectCreate
+
 ```javascript
 	polyfills.objectCreate();
 ```
 
 Adds support for object.create (3).
+
+### stringTrim
 
 ```javascript
 	polyfills.stringTrim();

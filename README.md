@@ -61,11 +61,8 @@ Adds support for string.trim, string.ltrim, string.rtrim and string.fulltrim (4)
 ## Sources
 
 1. Connolley, Paul. "IE7 querySelectorAll polyfill", https://gist.github.com/connrs/2724353
-
 2. Neal, Jonathan. "Polyfill the EventListener interface in IE8", https://gist.github.com/jonathantneal/3748027
-
 3. Gasparini, Ryan. "HTML5 API Polyfills", https://gist.github.com/rxgx/1597825
-
 4. Perelman, Eli. "String.prototype.trim polyfill for 140byt.es", https://gist.github.com/eliperelman/1035982
 
 ## License

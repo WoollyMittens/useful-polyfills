@@ -2,19 +2,19 @@
 
 A library of useful polyfills to ease working with HTML5 in legacy environments.
 
-Try the <a href="http://www.woollymittens.nl/useful/default.php?url=_useful">tests</a>.
+Try the <a href="http://www.woollymittens.nl/useful/default.php?url=polyfills">tests</a>.
 
-## How to use the script
+## How to include the script
 
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/useful.polyfills.js"></script>
+<script src="./js/polyfills.min.js"></script>
 ```
 
 The following private functions are run.
 
-## Functions
+## How to control the script
 
 ### html5
 
@@ -71,6 +71,11 @@ Adds support for object.create (3).
 ```
 
 Adds support for string.trim, string.ltrim, string.rtrim and string.fulltrim (4).
+
+## Prerequisites
+
+To concatenate and minify the script yourself, the following prerequisites are required:
++ https://github.com/WoollyMittens/useful-polyfills
 
 ## Sources
 

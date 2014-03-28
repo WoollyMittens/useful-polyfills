@@ -77,7 +77,7 @@
 	// allow console.log
 	polyfills.consoleLog = function () {
 		var overrideTest = new RegExp('console-log', 'i');
-		if (!window.console || overrideTest.test(document.body.parentNode.className)) {
+		if (!window.console || overrideTest.test(document.querySelectorAll('html')[0].className)) {
 			window.console = {};
 			window.console.log = function () {
 				// if the reporting panel doesn't exist

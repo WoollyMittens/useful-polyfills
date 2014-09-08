@@ -78,6 +78,14 @@ Adds support for object.create (3).
 
 Adds support for string.trim, string.ltrim, string.rtrim and string.fulltrim (4).
 
+### localStorage
+
+```javascript
+	polyfills.localStorage();
+```
+
+Adds support for localStorage.getItem, localStorage.key, localStorage.setItem, localStorage.length, localStorage.removeItem (5).
+
 ## How to build the script
 
 This project uses node.js from http://nodejs.org/
@@ -98,6 +106,7 @@ The following commands are available for development:
 2. Neal, Jonathan. "Polyfill the EventListener interface in IE8", https://gist.github.com/jonathantneal/3748027
 3. Gasparini, Ryan. "HTML5 API Polyfills", https://gist.github.com/rxgx/1597825
 4. Perelman, Eli. "String.prototype.trim polyfill for 140byt.es", https://gist.github.com/eliperelman/1035982
+5. Mozilla Developer Network. "DOM Storage guide", https://developer.mozilla.org/en/docs/Web/Guide/API/DOM/Storage
 
 ## License
 

@@ -1,16 +1,13 @@
 /*
 	Example Styling for Useful Functions
 */
-/* line 7, ../../src/scss/useful-polyfills.scss */
 .useful-tests dt {
   font-weight: bold;
   display: block;
   margin: 0;
-  padding: 0;
-}
-/* line 13, ../../src/scss/useful-polyfills.scss */
+  padding: 0; }
+
 .useful-tests dd {
   display: block;
   margin: 0 0 1.3em 0;
-  padding: 0;
-}
+  padding: 0; }

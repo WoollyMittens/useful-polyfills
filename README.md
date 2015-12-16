@@ -2,7 +2,7 @@
 
 A library of useful polyfills to ease working with HTML5 in legacy environments.
 
-Try the <a href="http://www.woollymittens.nl/useful/default.php?url=useful-polyfills">tests</a>.
+Try the <a href="http://www.woollymittens.nl/default.php?url=useful-polyfills">tests</a>.
 
 ## How to include the script
 

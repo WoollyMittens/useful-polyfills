@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title>useful-polyfills.js: A library of useful polyfills to ease working with HTML5 in legacy environments.</title>
+		<title>polyfills.js: A library of useful polyfills to ease working with HTML5 in legacy environments.</title>
 		<style>
 			html { font-family:Sans-Serif; font-size:75%; height:100%; }
 			body { _height:100%; line-height:180%; margin:0; min-height:100%; padding:1%; }
@@ -29,15 +29,16 @@
 			<aside>
 
 				<!-- Cut below this -->
-				<style>@import url("./css/useful-polyfills.css");</style>
-				<script src="./js/useful-polyfills.js"></script>
-				<div class="useful-tests">
+				<style>@import url("./css/polyfills.css");</style>
+				<script src="./js/polyfills.js"></script>
+				<script>var polyfills = new Polyfills();</script>
+				<div class="polyfill-tests">
 					<p>
 						The output of these tests is reported using <strong>console.log();</strong>.<br/>
 						Be sure to open the developer console first.
 					</p>
 					<dl>
-						<dt>useful.polyfills</dt>
+						<dt>polyfills</dt>
 						<dd><button onclick="console.log(['a','b','c'].indexOf('b'))">The index of B in A,B,C</button></dd>
 						<dd><button onclick="console.log(document.querySelectorAll('dd'));">All DD elements</button></dd>
 						<dd>

@@ -1,4 +1,4 @@
-# useful.polyfills.js: Polyfill Library
+# polyfills.js: Polyfill Library
 
 A library of useful polyfills to ease working with HTML5 in legacy environments.
 
@@ -9,15 +9,7 @@ Try the <a href="http://www.woollymittens.nl/default.php?url=useful-polyfills">t
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/useful-polyfills.js"></script>
-```
-
-To enable the use of HTML5 tags in Internet Explorer 8 and lower, include *html5.js*.
-
-```html
-<!--[if lte IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<script src="./js/polyfills.js"></script>
 ```
 
 ## How to control the script

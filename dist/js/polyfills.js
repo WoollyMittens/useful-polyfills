@@ -409,6 +409,5 @@ var Polyfills = function () {
 };
 
 // return as a require.js module
-if (typeof module !== 'undefined') {
-  exports = module.exports = useful.polyfills;
-}
+if (typeof define != 'undefined') define([], function () { return polyfills });
+if (typeof module != 'undefined') module.exports = polyfills;

@@ -9,7 +9,23 @@ Try the <a href="http://www.woollymittens.nl/default.php?url=useful-polyfills">t
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/polyfills.js"></script>
+<script src="js/polyfills.js"></script>
+```
+
+Or use [Require.js](https://requirejs.org/).
+
+```js
+requirejs([
+	'js/polyfills.js'
+], function(polyfills) {
+	...
+});
+```
+
+Or import into an MVC framework.
+
+```js
+var polyfills = require('js/polyfills.js');
 ```
 
 ## How to control the script
